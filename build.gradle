@@ -4,9 +4,11 @@ apply plugin: 'com.android.application'
 buildscript {
     repositories {
         jcenter()
+        flatDir { dirs 'proguard' }
 //        maven { url 'http://download.crashlytics.com/maven' }
     }
     dependencies {
+        classpath 'proguard.io:proguard:5.2.1'
         classpath 'com.android.tools.build:gradle:2.0.0-beta5'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'
     }
