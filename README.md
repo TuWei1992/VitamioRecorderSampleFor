@@ -52,10 +52,6 @@ buildscript {
 >
 > 经过这样的修改，我的工程中能一样完美的使用 vitamio 了。
 
-建议
-----------
-不要将 tools/proguard5.2.1/lib/proguard.jar 直接放入 tools/proguard/lib 里面替换。因为可能 android studio版本不支持导致你在其他项目里使用到 proguard 的时候不能使用 5.2.1 的版本而也需要将上面 第四条的修改加入到你的其他项目。引起麻烦。
-
 Developed By
 ============
 * NightQ <QQ:472974979>
