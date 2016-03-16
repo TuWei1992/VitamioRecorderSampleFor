@@ -52,9 +52,4 @@ buildscript {
 如何使用
 ----------
 
-请参考VCamera Android SDK用户手册_v1.x.pdf
-
-授权
--------
-
-个人免费，企业收费（商务sales@yixia.com，电话座机010-6482 8682）
+请参考[VCamera Android SDK用户手册](http://wscdn.miaopai.com/download/VCameraRecorder3.1.pdf)
