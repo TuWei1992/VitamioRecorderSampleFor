@@ -56,6 +56,15 @@ buildscript {
 ----------
 不要将 tools/proguard5.2.1/lib/proguard.jar 直接放入 tools/proguard/lib 里面替换。因为可能 android studio版本不支持导致你在其他项目里使用到 proguard 的时候不能使用 5.2.1 的版本而也需要将上面 第四条的修改加入到你的其他项目。引起麻烦。
 
+Developed By
+============
+* NightQ <QQ:472974979>
+
+参考
+------
+https://sourceforge.net/p/proguard/bugs/420/?page=0
+http://innodroid.com/blog/post/use-a-custom-proguard-build-with-gradle
+
 ##支持特性
 
 > * 支持分段拍摄、回删
