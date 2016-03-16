@@ -37,6 +37,14 @@ buildscript {
 
 >####3.clear 您的工程。进行编译就行了。
 
+后话
+-----------
+在demo中这样修改已经hi正常使用了。但是在我的工程中，不知道为什么，在录制后转码的时候会等很久才开始执行 ffmpeg 的命令转码。具体原因还没找到，但是我是完全引用的demo的代码，也许是工程太大 修改 proguard 导致的问题。若有人遇到相同问题，建议和我做一个相同的修改，如下：
+> 把 sdk/tools 里面的 proguard 使用新版本： 
+> <br /> * 将 sdk/tools/proguard 重命名为  sdk/tools/proguardold
+> <br /> * 将 sdk/tools/proguard5.2.1 重命名为  sdk/tools/proguard。
+> <br /> 经过这样的修改，我的工程中能一样完美的使用 vitamio 了。
+
 建议
 ----------
 不要将 tools/proguard5.2.1/lib/proguard.jar 直接放入 tools/proguard/lib 里面替换。因为可能 android studio版本不支持导致你在其他项目里使用到 proguard 的时候不能使用 5.2.1 的版本而也需要将上面 第四条的修改加入到你的其他项目。引起麻烦。
