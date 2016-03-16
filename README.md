@@ -62,8 +62,9 @@ Developed By
 
 参考
 ------
-https://sourceforge.net/p/proguard/bugs/420/?page=0
-http://innodroid.com/blog/post/use-a-custom-proguard-build-with-gradle
+> * https://sourceforge.net/p/proguard/bugs/420/?page=0
+> * http://innodroid.com/blog/post/use-a-custom-proguard-build-with-gradle
+> * https://sourceforge.net/projects/proguard/
 
 ##支持特性
 
