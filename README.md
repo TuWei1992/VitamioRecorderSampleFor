@@ -40,10 +40,12 @@ buildscript {
 后话
 -----------
 在demo中这样修改已经hi正常使用了。但是在我的工程中，不知道为什么，在录制后转码的时候会等很久才开始执行 ffmpeg 的命令转码。具体原因还没找到，但是我是完全引用的demo的代码，也许是工程太大 修改 proguard 导致的问题。若有人遇到相同问题，建议和我做一个相同的修改，如下：
-> 把 sdk/tools 里面的 proguard 使用新版本： 
-> <br /> * 将 sdk/tools/proguard 重命名为  sdk/tools/proguardold
-> <br /> * 将 sdk/tools/proguard5.2.1 重命名为  sdk/tools/proguard。
-> <br /> 经过这样的修改，我的工程中能一样完美的使用 vitamio 了。
+> 把 sdk/tools 里面的 proguard 使用新版本：
+>
+> 1.    将 sdk/tools/proguard 重命名为  sdk/tools/proguardold
+> 2.    将 sdk/tools/proguard5.2.1 重命名为  sdk/tools/proguard。
+>
+> 经过这样的修改，我的工程中能一样完美的使用 vitamio 了。
 
 建议
 ----------
