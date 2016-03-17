@@ -37,20 +37,22 @@ buildscript {
 
 >####3.clear 您的工程。进行编译就行了。
 
-<!--后话 -->
-<!--------------->
-<!--在demo中这样修改已经能正常使用了。但是在我的工程中，不知道为什么，在录制后转码的时候会等很久才开始执行 ffmpeg 的命令转码。具体原因还没找到，但是我是完全引用的demo的代码，也许是工程太大 修改 proguard 导致的问题。若有人遇到相同问题，建议和我做一个相同的修改，如下：-->
-<!-- 把 sdk/tools 里面的 proguard 使用新版本：-->
-<!--
-<!-- 1.    将 sdk/tools/proguard 里面的 -->
-<!--        <br />proguard-android-optimize.txt-->
-<!--        <br />proguard-android.txt-->
-<!--        <br />proguard-project.txt-->
-<!--        <br />三个配置文件拷入 sdk/tools/proguard5.2.1-->
-<!-- 2.    将 sdk/tools/proguard 重命名为  sdk/tools/proguardold-->
-<!-- 3.    将 sdk/tools/proguard5.2.1 重命名为  sdk/tools/proguard。-->
-<!-->
-<!-- 经过这样的修改，我的工程中能一样完美的使用 vitamio 了。-->
+后话 
+-----------
+在demo中这样修改已经能正常使用了。但是在我的工程中，因为使用一些其它库，可能会导致 AsyncTask 被卡死，不能尽快的执行，可能要等很久才执行，就会导致录视频之后 encode 要很久都不开始执行，是因为jar包中有一些耗时操作是使用了 AsyncTask 这个类，所以导致很久都不开始执行。目前没有办法。在此，希望 vitamio 团队能开源 java 层代码，或者修改为自己的线程池执行异步任务。
+
+作如下修改可以使用新版本的混淆工具，虽然并没有什么明显的东西～～～如下：
+ 把 sdk/tools 里面的 proguard 使用新版本：
+
+ 1.    将 sdk/tools/proguard 里面的 
+        <br />proguard-android-optimize.txt
+        <br />proguard-android.txt
+        <br />proguard-project.txt
+        <br />三个配置文件拷入 sdk/tools/proguard5.2.1
+ 2.    将 sdk/tools/proguard 重命名为  sdk/tools/proguardold
+ 3.    将 sdk/tools/proguard5.2.1 重命名为  sdk/tools/proguard。
+
+ 经过这样的修改，我的工程中能一样完美的使用 vitamio 了。
 
 Developed By
 ============
