@@ -57,7 +57,7 @@ buildscript {
 >  2.    将 sdk/tools/proguard 重命名为  sdk/tools/proguardold
 >  3.    将 sdk/tools/proguard5.2.1 重命名为  sdk/tools/proguard。
 
- 经过这样的修改，我的工程中能一样完美的使用 vitamio 了。
+> 经过这样的修改，我的工程中能一样完美的使用 vitamio 了。
 
 Developed By
 ============
