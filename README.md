@@ -20,6 +20,7 @@ VCamera SDK Android版（短视频拍摄SDK）是炫一下（北京）科技有�
 <br />`public static final String ATTR_StackMapTable = "dummy";` 
 <br />在 proguard5.2.1/buildscripts 目录下使用 [ant命令](http://ant.apache.org/) 编译 (如没有安装自寻在网上搜索安装).编译完成后会在 proguard5.2.1/lib 目录下生成 proguard.jar 等文件.
 > 4.  需要在项目工程里面配置使用新版本的依赖和引用：
+<br />在根目录创建 proguard 目录，并将上面生成的 proguard.jar 拷入其中
 <br />在根目录的 build.gradle 里面添加：
 <br /><pre><code class="language-text" data-lang="text">
 buildscript {
