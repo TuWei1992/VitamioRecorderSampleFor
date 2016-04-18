@@ -42,8 +42,7 @@ buildscript {
 -----------
 
 > 1.在demo中这样修改已经能正常使用了。但是在我的工程中，因为使用一些其它库，可能会导致 AsyncTask 被卡死，不能尽快的执行，可能要等很久才执行，就会导致录视频之后 encode 要很久都不开始执行，是因为jar包中有一些耗时操作是使用了 AsyncTask 这个类，所以导致很久都不开始执行。
-> 目前没有办法。在此，希望 vitamio 团队能开源 java 层代码，或者修改为自己的线程池执行异步任务。
-> <br />于是，可以在 AndroidManifest.xml 里面的 MediaRecorderActivity 生命的地方加上
+> 目前，可以在 AndroidManifest.xml 里面的 MediaRecorderActivity 生命的地方加上
 > <br />`android:process="vitamio.record.video"` 
 > <br />这里进程名字可以自定义，这样录制部分在新进程中执行就不会受到其它地方的影响了。
 > 
